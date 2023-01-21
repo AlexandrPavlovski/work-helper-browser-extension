@@ -1,0 +1,22 @@
+{
+    "name": "Work helper",
+    "version": "0.1",
+    "description": "Browser extension to help to work =(",
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://dev.azure.com/therapybrands/*"],
+          "js": ["azureDevops/addCreateBranchNameButton.js"]
+        }
+      ],
+    "options_page": "options.html",
+    "icons": {
+        "32": "icon32.png",
+        "48": "icon48.png"
+    },
+    "manifest_version": 3
+}
