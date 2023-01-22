@@ -1,7 +1,7 @@
 {
     "name": "Work helper",
-    "version": "0.1",
-    "description": "Browser extension to help to work =(",
+    "version": "0.1.1",
+    "description": "Browser extension to help to work",
     "permissions": [
         "storage",
         "tabs",
@@ -13,7 +13,7 @@
           "js": ["azureDevops/addCreateBranchNameButton.js"]
         }
       ],
-    "options_page": "options.html",
+    "options_page": "optionsPage/options.html",
     "icons": {
         "32": "icon32.png",
         "48": "icon48.png"
