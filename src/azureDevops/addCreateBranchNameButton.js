@@ -44,9 +44,9 @@ function createElementTheButton(isActive) {
       border-radius: 3px;
       margin-right: 5px;
       padding: 1px;
-      width: 12px;
+      width: 18px;
       height: 18px;
-      ${!isActive && "filter: grayscale(70%) contrast(50%);"}
+      ${isActive ? "" : "filter: grayscale(70%) contrast(50%);"}
     }
   `;
   if (isActive) {
