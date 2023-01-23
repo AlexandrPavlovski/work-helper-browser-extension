@@ -1,16 +1,18 @@
 {
     "name": "Work helper",
-    "version": "0.1.1",
+    "version": "0.2.0.0",
     "description": "Browser extension to help to work",
     "permissions": [
-        "storage",
-        "tabs",
-        "activeTab"
+        "storage"
     ],
     "content_scripts": [
         {
           "matches": ["https://dev.azure.com/therapybrands/*"],
           "js": ["azureDevops/addCreateBranchNameButton.js"]
+        },
+        {
+          "matches": ["https://theranest.atlassian.net/wiki/spaces/QKB/pages/*/*Release*"],
+          "js": ["atlassian/addCreatePullRequestDesctiptionButton.js"]
         }
       ],
     "options_page": "optionsPage/options.html",
