@@ -118,5 +118,6 @@ function formatWorkItemTitle(text) {
     .replace(/[^0-9a-z -]/g, "")
     .replace(/ /g, "-")
     .replace("---", "-")
-    .replace("--", "-");
+    .replace("--", "-")
+    .substring(0, 120);
 }
