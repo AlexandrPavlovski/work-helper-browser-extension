@@ -111,6 +111,6 @@
     return workItemIdInput.value;
   }
   function formatWorkItemTitle(text) {
-    return text.trim().toLowerCase().replace(/[^0-9a-z -]/g, "").replace(/ /g, "-").replace("---", "-").replace("--", "-");
+    return text.trim().toLowerCase().replace(/[^0-9a-z -]/g, "").replace(/ /g, "-").replace("---", "-").replace("--", "-").substring(0, 120);
   }
 })();
