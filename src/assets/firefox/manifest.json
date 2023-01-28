@@ -1,0 +1,32 @@
+{
+    "name": "Work helper",
+    "version": "1.0.0.0",
+    "description": "Browser extension to help to work",
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://dev.azure.com/therapybrands/*"],
+          "js": ["azureDevops/addCreateBranchNameButton.js"]
+        },
+        {
+          "matches": ["https://theranest.atlassian.net/wiki/spaces/QKB/pages/*/*Release*"],
+          "js": ["atlassian/addCreatePullRequestDesctiptionButton.js"]
+        }
+      ],
+    "options_ui": {
+      "page": "optionsPage/options.html",
+      "open_in_tab": true
+    },
+    "icons": {
+        "32": "icon32.png",
+        "48": "icon48.png"
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "work@helper.com"
+      }
+    },
+    "manifest_version": 2
+}

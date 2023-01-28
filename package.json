@@ -1,0 +1,25 @@
+{
+  "name": "work-helper",
+  "version": "1.0.0",
+  "description": "Browser extension to help to work",
+  "scripts": {
+    "cleanFirefox": "del /s /q .\\build\\firefox\\*",
+    "buildFirefox": "node ./build.js firefox",
+    "copyFirefox": "xcopy .\\src\\assets\\common\\* .\\build\\firefox /i /c /e /y && copy .\\src\\assets\\firefox\\* .\\build\\firefox",
+    "firefox": "npm run cleanFirefox && npm run buildFirefox && npm run copyFirefox",
+
+    "cleanChrome": "del /s /q .\\build\\chrome\\*",
+    "buildChrome": "node ./build.js chrome",
+    "copyChrome": "xcopy .\\src\\assets\\common\\* .\\build\\chrome /i /c /e /y && copy .\\src\\assets\\chrome\\* .\\build\\chrome",
+    "chrome": "npm run cleanChrome && npm run buildChrome && npm run copyChrome",
+
+    "all": "npm run chrome && npm run firefox"
+  },
+  "author": "Aliaksandr Paulouski",
+  "devDependencies": {
+    "esbuild": "0.17.5"
+  },
+  "dependencies": {
+
+  }
+}
