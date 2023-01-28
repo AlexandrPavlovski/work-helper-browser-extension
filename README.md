@@ -2,9 +2,12 @@
 
 Browser extension that contains multiple functions useful in day-to-day work
 
+Build folder contains ready-to-go extensions
+
+###### Browsers Supported
+Chrome
+Firefox
+
 ###### Implemented
 - Adds a button to Azure DevOps cards that builds acceptable branch name and puts it in the clipboard
 - Adds a button to release log page that builds release pullrequest description and puts it in the clipboard
-
-###### Work in progress
-- Firefox support
